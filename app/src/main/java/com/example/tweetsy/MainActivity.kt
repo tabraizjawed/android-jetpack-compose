@@ -16,7 +16,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.tweetsy.screens.CategoryScreen
 import com.example.tweetsy.screens.DetailScreen
 import com.example.tweetsy.screens.Simply
 import com.example.tweetsy.ui.theme.TweetsyTheme

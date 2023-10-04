@@ -30,26 +30,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.tweetsy.R
 import com.example.tweetsy.viewmodels.CategoryViewModel
 
-data class Item(val text: String, val color: Color)
-
-val items = listOf<Item>(
-    Item("Android", Color(0xFF1bb2b2)),
-    Item("System Design", Color(0xFFff7544)),
-    Item("Motivation", Color(0xFFfa5a7e)),
-    Item("Facts", Color(0xFF8676fe)),
-    Item("JavaScript", Color(0xFF1bb2b2)),
-    Item("React", Color(0xFF4278df))
-)
-
-
-@Preview
 @Composable
 fun Simply(onClick: (category: String) -> Unit) {
 
     val categoryViewModel: CategoryViewModel = hiltViewModel()
     val categories: State<List<String>> = categoryViewModel.categories.collectAsState()
-
-
 
     Column(
         modifier = Modifier
